@@ -1,11 +1,11 @@
 var express = require("express");
-const burgers = require("../models/burgers.js");
+const burger = require("../models/burgers.js");
 
 var router = express.Router();
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function (req, res) {
-  burgers.selectAll(function (data) {
+  burger.selectAll(function (data) {
     var hbsObject = {
       burgers: data,
     };
@@ -15,7 +15,7 @@ router.get("/", function (req, res) {
 });
 
 router.post("/burgers", function (req, res) {
-  burgers.insertOne(["burger_name"], [req.body.burger_name], function () {
+  burger.insertOne(["burger_name"], [req.body.burger_name], function () {
     // Send back the ID of the new quote
     res.redirect("/");
   });
@@ -26,7 +26,7 @@ router.put("/burgers/:id", function (req, res) {
 
   // console.log("condition", condition);
 
-  burgers.updateOne(
+  burger.updateOne(
     {
       devoured: true,
     },
