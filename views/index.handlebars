@@ -28,7 +28,9 @@
             {{#each burgers}}
             {{#if devoured}}
             <li>
+                <form action="/burgers/{{this.id}}" method="POST"></form>
                 {{this.burger_name}}
+                <button type="submit" class="btn btn-danger">Delete</button>
             </li>
             {{/if}}
             {{/each}}
