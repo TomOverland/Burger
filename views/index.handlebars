@@ -1,33 +1,50 @@
-<h1 class=>Eat-Da-Burger!</h1>
+<h1 class="text-center title">Eat-Da-Burger!</h1>
 
 <div class="container">
     <div class="row">
-        <ul>
-            {{#each burgers}}
-            {{#unless this.devoured}}
-            <p>To be completed</p>
-            {{/unless}}
-            {{/each}}
-        </ul>
+        <div class="col">
+            <h2>
+                Burgers Available to Eat
+            </h2>
+            <ul>
+                {{#each burgers}}
+                {{#unless this.devoured}}
+                <li>
+                    {{this.burger_name}}
+                    
+                    <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
+                            <button type="submit" class="btn btn-warning">Devour</button>
+                        </form>
+                
+                </li>
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
 
-        <ul>
+        <div class="col">
+            <h2 class="text-center">Burgers Devoured</h2>
+            <ul>
             {{#each burgers}}
             {{#if devoured}}
-            <p>to be completed</p>
+            <li>
+                {{this.burger_name}}
+            </li>
             {{/if}}
             {{/each}}
-        </ul>
+            </ul>
+        </div>
     </div>
-
-    <h2>Add a Burger</h2>
+   
+        <h2 class="text-center">Add a Burger</h2>
 
     <div class="row">
-        <div class="col" <form action="/burgers" method="POST">
+        <div class ="col"> 
+            <form action="/burgers" method="POST">
             <input type="text" id="name" name="burger_name" placeholder="Enter Burger Name">
             <button type="submit">Add Burger</button>
             </form>
-
-
         </div>
-
     </div>
+</div>
+
