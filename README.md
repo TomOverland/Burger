@@ -2,7 +2,7 @@
 
 [Deployed on Heroku](https://tranquil-citadel-07940.herokuapp.com/).
 
-![Screenshot of Application](URL of Demo Photo coming soon...)
+![Screenshot of Application](https://github.com/TomOverland/Burger/blob/main/public/images/Demo.JPG)
 
 ## Description:
 
