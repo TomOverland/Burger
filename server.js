@@ -15,8 +15,7 @@ app.use(express.json());
 // Set Handlebars.
 var exphbs = require("express-handlebars");
 
-
-app.use(methodOveride('_method'));
+app.use(methodOveride("_method"));
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
