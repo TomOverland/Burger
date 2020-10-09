@@ -1,4 +1,4 @@
-# Note Taker
+# Burger Application
 
 [Deployed on Heroku](https://tranquil-citadel-07940.herokuapp.com/).
 
