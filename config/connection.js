@@ -2,6 +2,7 @@ var mysql = require("mysql");
 const secrets = require("./config");
 const util = require("util");
 
+// use Jaws DB if Heroku detects that it exists, otherwise use localhost
 if (process.env.JAWSDB_URL) {
   var connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
