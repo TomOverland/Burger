@@ -1,5 +1,6 @@
 var connection = require("../config/connection");
 
+// This function creates SQL syntax
 function printQuestionMarks(num) {
   var arr = [];
 
@@ -10,6 +11,7 @@ function printQuestionMarks(num) {
   return arr.toString();
 }
 
+// This function converts objects to SQL syntax
 function objToSql(ob) {
   var arr = [];
 
@@ -21,6 +23,7 @@ function objToSql(ob) {
 }
 
 var orm = {
+  // Display all burgers in the db
   selectAll: function (tableInput, cb) {
     var queryString = "SELECT * FROM " + tableInput + ";";
 
@@ -29,6 +32,7 @@ var orm = {
       cb(result);
     });
   },
+  // Add burger to the db
   insertOne: function (table, cols, vals, cb) {
     var queryString = "INSERT INTO " + table;
     queryString += " (";
@@ -47,6 +51,7 @@ var orm = {
       cb(result);
     });
   },
+  // Update burger that already exists
   updateOne: function (table, objColVals, condition, cb) {
     var queryString = "UPDATE " + table;
 
@@ -61,6 +66,22 @@ var orm = {
         throw err;
       }
 
+      cb(result);
+    });
+  },
+
+  // Delete burger from the db
+  deleteOne: function (table, condition, cb) {
+    let queryString = "DELETE FROM " + table;
+    queryString += " WHERE ";
+    queryString += condition;
+
+    console.log(queryString);
+
+    connection.query(queryString, function (err, result) {
+      if (err) {
+        throw err;
+      }
       cb(result);
     });
   },
