@@ -1,4 +1,24 @@
+body {
+  background-color: #003049;
+}
+
 #header {
-  background-color: #d62828 !important;
-  color: #eae2b7 !important;
+  font-family: "Bungee Shade", cursive;
+  font-size: 6rem;
+  background-color: #d62828;
+  color: #eae2b7;
+}
+
+#card-header {
+  background-color: #f77f00;
+  font-family: "Bungee", cursive;
+}
+
+#card-body {
+  background-color: #fcbf49;
+  font-family: "Lato", sans-serif;
+}
+
+#burger-img {
+  width: 25%;
 }

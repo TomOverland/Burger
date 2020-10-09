@@ -15,6 +15,7 @@ app.use(express.json());
 // Set Handlebars.
 var exphbs = require("express-handlebars");
 
+// Using method override to allow HTML forms to PUT and DELETE, instead of using ajax requests
 app.use(methodOveride("_method"));
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");

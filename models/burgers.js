@@ -19,13 +19,14 @@ var burger = {
       cb(res);
     });
   },
-  // Delete burger from the db
-  deleteOne: function (condition, cb) {
-    orm.deleteOne("burgers", condition, function (res) {
-      cb(res);
-    });
-  },
 };
+// Delete burger from the db
+//   deleteOne: function (condition, cb) {
+//     orm.deleteOne("burgers", condition, function (res) {
+//       cb(res);
+//     });
+//   },
+// };
 
-// Export the database functions for the controller (catsController.js).
+// Export the database functions for the controller (burgers_controller.js).
 module.exports = burger;

@@ -1,21 +1,23 @@
-<div class="container">
+<div class="container-fluid">
     <!-- HEADER -->
-    <div class="jumbotron">
-        <h1 class="text-center title">Eat-Da-Burger!</h1>
+    <div id="header" class="jumbotron">
+        <h1 id="header" class="text-center title">Eat-Da-Burger!</h1>
 
     </div><!-- Jumbotron -->
-
-    <!-- <img src="public\images\burger.jpg" alt="Burger"> -->
-
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <img src="\images\burger.jpg" alt="Burger" id="burger-img" class="img-fluid">
+        </div>
+    </div>
     <!-- ADD A NEW BURGER -->
     <div class="row">
         <div class="col">
-            <div class="card">
-                <div class="card-header">
+            <div class="card my-3">
+                <div id="card-header" class="card-header">
                     <h2 class="card-title text-center">Add a New Burger!</h2>
                 </div>
 
-                <div class="card-body">
+                <div id="card-body" class="card-body">
                     <div class="text-center">
                         <form action="/api/burgers" method="POST">
                             <input type="text" id="name" name="burger_name" placeholder="Enter Burger Name">
@@ -28,11 +30,11 @@
 
         <!-- BURGERS AVAILABLE TO EAT -->
         <div class="col">
-            <div class="card">
-                <div class="card-header">
+            <div class="card my-3">
+                <div id="card-header" class="card-header">
                     <h2 class="card-title text-center">Burgers Available to Eat</h2>
                 </div>
-                <div class="card-body text-center">
+                <div id="card-body" class="card-body text-center">
 
                     {{#each burgers}}
                     {{#unless this.devoured}}
@@ -40,7 +42,7 @@
 
                     <form action="/api/burgers/{{this.id}}?_method=PUT" method="POST">
                         {{this.burger_name}}
-                        <button type="submit" class="btn btn-warning">Devour</button>
+                        <button type="submit" class="btn btn-danger">Devour</button>
                     </form>
 
 
@@ -53,11 +55,11 @@
 
         <!-- DEVOURED BURGERS -->
         <div class="col">
-            <div class="card">
-                <div class="card-header">
+            <div class="card my-3">
+                <div id="card-header" class="card-header">
                     <h2 class="card-title text-center">Burgers Devoured</h2>
                 </div>
-                <div class="card-body text-center">
+                <div id="card-body" class="card-body text-center">
                     {{#each burgers}}
                     {{#if devoured}}
                     <ul class="list-unstyled">
