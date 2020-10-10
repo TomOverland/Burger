@@ -14,7 +14,7 @@ The app allows the user to enter any burger name to add it to the menu. This ent
 
 #### Step 1 - Make sure you have a code editor, MySQL, Node.js and Node Package Manager installed
 
-The code editor I used was Visual Studio Code.  It can be found [here](https://code.visualstudio.com/download).
+The code editor I used was Visual Studio Code. It can be found [here](https://code.visualstudio.com/download).  
 Node.js and NPM download can be found [here](https://nodejs.org/en/).  
 MySQL workbench can be found [here](https://dev.mysql.com/downloads/workbench/).
 
