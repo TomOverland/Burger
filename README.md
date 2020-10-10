@@ -12,9 +12,9 @@ The app allows the user to enter any burger name to add it to the menu. This ent
 
 ## Installation:
 
-# Step 1 - Clone my repository
+### Step 1 - Clone my repository
 
-In your command terminal, type the following to clone this repository: "git clo
+In your command terminal, type the following to clone this repository: "git clone 
 
 ## License:
 
