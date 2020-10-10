@@ -52,7 +52,7 @@ This application was not developed with any tests.
 
 ## Demonstration
 
-- [YouTube](URL of Youtube demo link coming soon...)
+- [YouTube](https://youtu.be/V8LyyhFEOaQ)
 
 ## Questions:
 
