@@ -8,7 +8,7 @@
 
 This application demonstrates a simple full stack development application with front end implemented with an HTML/CSS and Bootstrap 4.  The backend is implemented with Node.js and Express. The database was constructed with MySQL and implemented to Heroku with JawsDB. The HTML templating was completed with Handlebars.
 
-The app allows the user to enter any burger name to add it to the menu. This enters the burger's information into the MySQL database. When a burger is created, it is added to the available burger menu, and it's default "devoured" status is set to false. When the user clicks the "Devour" button to eat a burger, then it changes the saved "devoured" boolen to false in the database, and the burger is moved to the "devoured" menu.
+The app allows the user to enter any burger name to add it to the menu. This enters the burger's information into the MySQL database. When a burger is created, it is added to the available burger menu, and it's default "devoured" status is set to false. When the user clicks the "Devour" button to eat a burger, then it changes the saved "devoured" boolen to false in the database, and the burger is moved to the "devoured" menu. After the burger has been "devoured," the user can delete the burger from the database.
 
 ## Installation:
 
