@@ -30,7 +30,12 @@ Type the following in your command line: "cd Burger"
 
 By typing "npm install -i" you will download all of the dependencies required for this application.
 
-#### Step 5 - Start the application on your local server
+#### Step 5 - Execute the MySQL code
+
+Insert the MySQL schema and seeds into your MySQL, or use mysql npm package to execute the code in your command line.  
+You will have to change the user name and password in connection.js to your MySQL login info.
+
+#### Step 6 - Start the application on your local server
 
 Type the following in your command line: "node server.js" and then go to the url "localhost:3000" in your internet browser.
 
