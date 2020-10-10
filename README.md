@@ -10,6 +10,12 @@ This application demonstrates a simple full stack development application with f
 
 The app allows the user to enter any burger name to add it to the menu. This enters the burger's information into the MySQL database. When a burger is created, it is added to the available burger menu, and it's default "devoured" status is set to false. When the user clicks the "Devour" button to eat a burger, then it changes the saved "devoured" boolen to false in the database, and the burger is moved to the "devoured" menu.
 
+## Installation:
+
+# Step 1 - Clone my repository
+
+In your command terminal, type the following to clone this repository: "git clo
+
 ## License:
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
