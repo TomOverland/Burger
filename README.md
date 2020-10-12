@@ -39,6 +39,26 @@ You will have to change the user name and password in connection.js to your MySQ
 
 Type the following in your command line: "node server.js" and then go to the url "localhost:3000" in your internet browser.
 
+#### Technology used
+* Node.js
+* Heroku-cli NPM Package
+* Handlebars
+* Express NPM Package
+* Express-Handlebars NPM Package
+* HTML 5
+* CSS 3
+* Bootstrap 4
+* JavaScript
+* jQuery
+* Path NPM Package
+* Method-Override NPM Package
+* MySQL NPM Package
+* Util NPM Package
+
+#### Built With
+* VS Code - https://code.visualstudio.com/
+* MySQL Workbench - https://www.mysql.com/
+
 ## License:
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
