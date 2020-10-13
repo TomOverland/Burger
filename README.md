@@ -22,20 +22,23 @@ MySQL workbench can be found [here](https://dev.mysql.com/downloads/workbench/).
 
 In your command terminal, type the following to clone this repository: "git clone https://github.com/TomOverland/Burger.git"
 
-#### Step 3 - Move to the correct directory
+#### Step 3 - Create a config.js file
+
+Using the config.js.example file, create a config.js file with your local MySQL login information.
+
+#### Step 4 - Move to the correct directory
 
 Type the following in your command line: "cd Burger"
 
-#### Step 4 - Install NPM dependencies
+#### Step 5 - Install NPM dependencies
 
 By typing "npm install -i" you will download all of the dependencies required for this application.
 
-#### Step 5 - Execute the MySQL code
+#### Step 6 - Execute the MySQL code
 
 Insert the MySQL schema and seeds into your MySQL, or use mysql npm package to execute the code in your command line.  
-You will have to change the user name and password in connection.js to your MySQL login info.
 
-#### Step 6 - Start the application on your local server
+#### Step 7 - Start the application on your local server
 
 Type the following in your command line: "node server.js" and then go to the url "localhost:3000" in your internet browser.
 
